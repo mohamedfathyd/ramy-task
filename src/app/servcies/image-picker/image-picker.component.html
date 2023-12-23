@@ -1,0 +1,27 @@
+<div class="picker">
+  <ion-img
+    [src]="selectedImage"
+    role="button"
+    (click)="selectImage()"
+    *ngIf="selectedImage "
+    [alt]="selectedImage.name"
+  ></ion-img>
+  <ion-button
+    color="dark"
+    class="upload_btn"
+    (click)="selectImage()"
+    expand="block"
+    *ngIf="!selectedImage"
+  >
+  <ion-icon slot="start" name="attach-outline"></ion-icon>
+    <ion-label>{{ attachType.name_ar }}</ion-label> 
+  </ion-button>
+
+  <input
+    type="file"
+    accept=".png, .jpg, .jpeg, .pdf"
+    (change)="onFileChosen($event)"
+    #fileInp
+    id="fileUpload"
+  />
+</div>

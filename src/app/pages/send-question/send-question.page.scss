@@ -1,0 +1,70 @@
+@import "../../../theme/theme.scss";
+.content-style {
+   text-align: center;
+   --background:#F9FBFC;
+   margin: 20px;
+   .card-buttons {
+    border-radius: 15px;
+    margin: 10px 5px 0px 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 98%;
+    padding-top: 6px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.page_title{
+    margin-top: 4%;
+    display: flow;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    font-weight: bolder;
+}
+.back-icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.header{
+    color: white;
+    background-color: $green-button;
+}
+ion-select{
+    border: 1px solid $green-button;
+    color: $green-button;
+    width: 100%;
+    font-size: 20px;
+    padding-inline-start: 20px;
+}
+ion-card{
+    text-align: start;
+    margin: inherit;
+    margin-top: 32px;
+}
+.titleText{
+    margin:8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.viewText{
+    width: 90%;
+    height: 90px;
+    border: 1px solid gray;
+    margin: 16px;
+}
+.button-view{
+    background: white;
+    width: fit-content;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 30px;
+    border: 1px solid;
+    padding: 8px 32px;
+    font-size: 16px;
+    left: 0;
+    margin-inline-end: 16px;
+}
+}

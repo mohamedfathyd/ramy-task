@@ -1,0 +1,41 @@
+<ion-content class="content-style">
+  <div>
+  <ion-row class="row-home header">
+    <ion-col size="4"></ion-col>
+    <ion-col size="4">
+      <label class="page_title">إسال السؤال</label>
+    </ion-col>
+    <ion-col size="2"></ion-col>
+    <ion-col style="margin: 8px;margin-inline-start: 20px;" (click)="back()" size="1">
+      <ion-icon class="back-icon" name="arrow-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <div style="margin: 1% 6px;">
+    <ion-row style="margin-top: 20px;">
+      <ion-col size="6">
+        <ion-select interface="popover">
+        <ion-select-option >القاهرة
+        </ion-select-option>
+      </ion-select>
+      </ion-col>
+      <ion-col size="6">
+        <ion-select interface="popover">
+        <ion-select-option >بدل رجالي
+        </ion-select-option>
+      </ion-select>
+      </ion-col>
+    </ion-row>
+    <ion-card>
+      <div class="titleText">
+        اكتب سؤالك
+      </div>
+      <textarea class="viewText">
+
+      </textarea> 
+    </ion-card>
+    <div class="button-view" (click)="sendMessage()">
+   إرسال  
+    </div>
+  </div>
+  </div>
+  </ion-content>

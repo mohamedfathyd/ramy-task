@@ -1,0 +1,54 @@
+<ion-content class="ion-no-padding content-style">
+  <div class="content">
+    <img class="logo" src="../../../assets/icon/logo.svg">
+  </div>
+  <ion-row class="input-style" style="margin-top: 10%;">
+    <ion-col size="12">
+      <ion-input type="text" inputmode="numeric" onkeypress=" 
+    if(!(event.charCode>=47 && event.charCode < 58))return false;" [(ngModel)]="userName"
+        placeholder="{{language.login.phone}}">
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="input-style" style="margin-top: 7%;">
+    <ion-col size="10">
+      <ion-input [(ngModel)]="password" type="text" class="password_style" [ngClass]="{'password_style_view':viewPassbool==true,
+   'password_style':viewPassbool==false }" placeholder="{{language.login.password}}">
+      </ion-input>
+    </ion-col>
+    <ion-col *ngIf="viewPassbool" (click)="viewPass(false)" size="2"><ion-icon name="eye-outline"></ion-icon> </ion-col>
+    <ion-col *ngIf="!viewPassbool" (click)="viewPass(true)" size="2"><ion-icon name="eye-off-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <label (click)="reset()">{{language.login.forgetPassword}}</label>
+  <div class="start">
+    <ion-button (click)="login()" type="submit" fill="clear" class="general-button">
+      <strong>{{language.Login}}</strong>
+    </ion-button>
+  </div>
+  <ion-row style="margin: 0px 24px;">
+    <ion-col size="4.5" class="dots"></ion-col>
+    <ion-col size="3">
+      <h3>{{language.login.orFrom}}</h3>
+    </ion-col>
+    <ion-col size="4.5" class="dots"></ion-col>
+  </ion-row>
+  <ion-row style="margin: 30px 28%;">
+    <ion-col size="4">
+      <img class="logo2" src="../../../assets/images/Mask Group 4.png">
+    </ion-col>
+    <ion-col size="4">
+      <img class="logo2" src="../../../assets/icon/btnSigninwithFb.svg">
+    </ion-col>
+    <ion-col size="4">
+      <img class="logo2" src="../../../assets/icon/google.svg">
+    </ion-col>
+  </ion-row>
+  <h4>
+    {{language.login.noAccount}}<span style="color: #AA1D20;font-weight: bolder;"
+      (click)="register()">{{language.login.register}}</span>
+  </h4>
+  <h4 (click)="visitor()" class="visitor">
+    {{language.login.visitor}}
+  </h4>
+</ion-content>

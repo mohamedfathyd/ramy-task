@@ -1,0 +1,27 @@
+<ion-content class="ion-no-padding content-style">
+    <swiper-container (slidechange)="swiperSlideChanged($event)"  (afterinit)="swiperReady()" class="swipe_account" #swiper [pagination]="true" dir="{{'dir'|translate}}">
+
+      <swiper-slide>
+        <img src="../../../assets/images/Group 740.png" />
+      </swiper-slide>
+
+      <swiper-slide>
+        <img src="../../../assets/images/Group 739.png" />
+      </swiper-slide>
+
+      <swiper-slide>
+        <img src="../../../assets/images/Group 741.png" />
+      </swiper-slide>
+
+    </swiper-container>
+
+
+    <div class="start ">
+      <ion-button (click)="next()" type="submit" fill="clear" class="general-button">
+        <strong *ngIf="index==2">{{language.Login}}</strong> 
+        <strong *ngIf="index!=2">{{language.next}}</strong> 
+      </ion-button>
+      <h4  (click)="onStart()">{{language.skip}}</h4>
+    </div>
+
+</ion-content>

@@ -1,0 +1,245 @@
+@import "../../../theme/theme.scss";
+.content-style {
+   text-align: center;
+   --background:#ffffff00;
+   margin: 20px;
+   .card-buttons {
+    border-radius: 15px;
+    margin: 10px 5px 0px 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 98%;
+    padding-top: 6px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+
+.hamburger_image{
+    width: 25px;
+    margin-top: 10px;
+}
+.page_title{
+    border: 1px solid $green_button;
+    display: flow;
+    border-radius: 20px;
+    margin-inline-start: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: $blue_title;
+    font-weight: bolder;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light_white;
+  margin: auto;
+  padding-top: 10px;
+  font-weight: bold;
+  background-color: #e2efe8;
+}
+ion-icon{
+  color: $green-button;
+  width: 25px;
+  height: 25px;
+}
+.profile-img{
+    border-radius: 50px;
+    border-color: #8EBEA7;
+    height: 50px;
+}
+h2{
+    color: $blue_title;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 2px;
+}
+//  SECTION 4-4
+.section-4-4 {
+  padding-bottom: 0px;
+}
+
+.section-4-4 ion-col {
+  text-align: center;
+  padding: 5px;
+  width: 87px;
+}
+
+.section-4-4 div {
+  height: 85px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.section-4-4 div:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.section-4-4 p {
+  color: $blue_title;
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.row-home{
+  margin-top: 3%;
+}
+.ios .row-home{
+  margin-top: 8%;
+}
+.section-4-4 .otp-font img {
+  height: 35px;
+  width: auto;
+}
+
+.section-4-4 .otp-font p {
+  font-size: 15px;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+  direction: rtl;
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
+  --swiper-pagination-color: var(--ion-color-primary, #007844);
+}
+.swipe_account{
+  --swiper-pagination-color: #AA1D20;
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #007844);
+  --swiper-pagination-bullet-inactive-opacity:0.6;
+}
+swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+} 
+.ad-image{
+  border-radius: 8px;
+  width: 370px;
+  height: 120px;
+  padding: 0px 4px;
+}
+  .product-image{
+    border-radius: 22px;
+    width: 100%;
+    height: 140px;
+    padding: 8px;
+  }
+.offer{
+  background-color: #AA1D20;
+    color: white;
+    text-align: center;
+    padding: 2px 15px;
+    display: table-caption;
+    margin-top: 15px;
+    margin-bottom: -50px;
+    width: max-content;
+    position: fixed;
+}
+.favourite{
+  padding: 2px 15px;
+  display: table-caption;
+  margin-top: 12px;
+  margin-bottom: -50px;
+  width: max-content;
+  position: fixed;
+  height: 30px;
+  margin-inline-start: 60%;
+}
+ion-card{
+  margin: 8px;
+}
+.rotated {
+  transform: rotate(-180deg);
+}
+.show-all {
+  font-size: 13px !important;
+  font-weight: bold;
+  margin-top: 0px !important;
+  display:flex;
+  color: $blue_button;
+  text-align: end !important;
+}
+.branchList{
+    display: flex;
+    overflow-x: scroll;
+    margin: 22px 0px;
+}
+.branche{
+  background-color: white;
+  border-radius: 16px;
+  text-align: center;
+  margin: 0px 8px;
+  font-weight: bold;
+  color: #000;
+  padding: 8px;
+  font-size: 12px;
+  width:fit-content;
+ }
+ .card-transaction{
+  background-color: #007844;
+  border: 1px solid #007844;
+  border-radius: 12px;
+  margin: auto;
+  text-align: center;
+  padding-top: 4px;
+  height: 70px;
+  margin: 16px;
+}
+.account_transaction{
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 7px;
+}
+.balance_transaction{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: start;
+  margin-inline-start: 16px;
+  margin-top:5px;
+}
+.balance_desc{
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: start;
+  margin-inline-start: 16px;
+  margin-top:-7px;
+}
+.amount_transaction{
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0px;
+}
+.dinar_transaction{
+  color: white;
+  font-size: 13px;
+  margin: 0px;
+}
+.date_transaction{
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 10px;
+}
+.title{
+    text-align: center;
+    color: $green-button;
+    margin: 8px;
+    font-size: 15px;
+}
+}

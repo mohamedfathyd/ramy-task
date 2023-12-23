@@ -1,0 +1,26 @@
+<ion-content class="content-style">
+  <div style="padding: 12px;">
+    <ion-row class="row-home">
+      <ion-col size="2">
+        <ion-icon name="menu"></ion-icon>
+      </ion-col>
+      <ion-col (click)="sendQuestion()" size="4">
+        <label class="page_title">إسال المتاجر</label>
+      </ion-col>
+      <ion-col size="3"></ion-col>
+      <ion-col size="1">
+        <ion-icon name="search"></ion-icon>
+      </ion-col>
+      <ion-col size="1">
+        <ion-icon name="heart"></ion-icon>
+      </ion-col>
+      <ion-col  size="1">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <div style="margin: 1% 6px;">
+      <div class="title" style=""> ردود المتاجر</div>
+      <view-market-responses ></view-market-responses>
+    </div>
+  </div>
+</ion-content>

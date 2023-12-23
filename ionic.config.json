@@ -1,0 +1,7 @@
+{
+  "name": "Sstli",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,99 @@
+<ion-content [fullscreen]="true">
+ <div style="height: 100%;background-color: #007844;">
+  <ion-row style="padding: 40px 5px 10px 5px;">
+    <ion-col size="6">
+      <div class="start">
+        <ion-button style="width: 100%;" (click)="register()" type="submit" fill="clear" class="general-button-white">
+         <strong >{{language.home.register}}</strong> 
+        </ion-button> 
+       </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="start">
+        <ion-button style="width: 100%;" (click)="login()" type="submit" fill="clear" class="general-button-transparent">
+         <strong >{{language.login.title}}</strong> 
+        </ion-button> 
+       </div>
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="ourBranches()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/branch.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.chapters}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="beneficiary()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/heart.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.favourite}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="branches()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/hamburg.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.branches}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="blogs()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/blog.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.blogger}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="manasa()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/manasa.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.manasa}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="aboutUs()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/about.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.aboutBranch}}
+    </ion-col>
+  </ion-row>
+  <ion-row (click)="help()"  class="ion-align-items-center ion-justify-content-between">
+    <ion-col size="2" class="ion-text-center">
+      <img src="./../../../assets/icon/help.svg" alt="">
+    </ion-col>
+    <ion-col class="about" size="10">
+      {{language.home.help}}
+    </ion-col>
+  </ion-row>
+  <div style="margin-top: 50px;">
+    <h5> {{language.home.terms}}</h5>
+    <h5> {{language.home.secret}}</h5>
+    <h5> {{language.home.shareApp}}</h5>
+    <h5> {{language.home.callUs}}</h5>
+  </div>
+  <ion-row style="margin: 20px 60px;">
+    <ion-col (click)="goToLink(social.link)" *ngFor="let social of socialList">
+      <img class="logo2" [src]="social.icon.url">
+    </ion-col>
+  </ion-row>
+  <div class="bottom-logo">
+    <div>
+      <img class="logo2" src="../../../assets/images/Mastercard-logo.png">
+      <img class="logo2" src="../../../assets/images/Group 1006.png">
+      <img class="logo2" src="../../../assets/images/pay.png">
+    </div>
+    <div>
+      <img class="logo2" src="../../../assets/images/Stc_pay.png">
+      <img class="logo2" src="../../../assets/images/tappyDefaultLogo.png">
+      <img class="logo2" src="../../../assets/images/Tamara_Logo-EN-3000x973.png">
+    </div>
+  </div>
+ </div>
+</ion-content>

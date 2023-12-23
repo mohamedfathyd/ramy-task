@@ -1,0 +1,112 @@
+@import "../../../theme/theme.scss";
+ion-toolbar{
+    height: 50px;
+    padding: 4px;
+    font-family: Tajawal;
+    color: white;
+    --background:#030e46 !important;
+    ion-button{
+      border: transparent;
+  }
+}
+.ios ion-toolbar{
+  padding: 4px;
+  color: white;
+  --background:#030e46 !important;
+  font-family: Tajawal;
+  height: 60px;
+  ion-button{
+    border: transparent;
+}
+}
+ion-content {
+    --background: #007844 !important;
+    font-family: Tajawal;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #323635;
+}
+.bottom-logo{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+ion-icon {
+    color: #323635;
+    font-size: 14px;
+  }
+  .line {
+    border: 1px solid #ededed;
+    width: 93%;
+    margin: 20px auto;
+  }
+  ion-row{
+    margin: 4px 12px;
+  }
+  .the-balance {
+   background-color: $blue_card;
+   color: white !important;
+   padding: 32px 0px 16px 0px;
+   margin: 0px;
+  }
+  .avatar {
+    height: 49px;
+    max-height: 48px;
+    border-radius: 50%;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-color: $ion-avatar_back;
+  }
+  .customer-info {
+    margin-inline-start: 10px;
+    display: grid;
+  }
+  .customer-name {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Tajawal;
+    display: flex;
+  }
+  .customer-account {
+    color: $gray;
+    font-family: Tajawal;
+    font-size: 13px;
+    display: flex;
+  }
+  .profile-img{
+    border-radius: 50px;
+    margin-top: -8px;
+  }
+  .under_Line{
+    border-bottom: 1px solid #7b82935c;
+    margin: 0% 6%;
+  }
+  .about {
+    font-family: Tajawal;
+    font-size: 14px;
+    color: white;
+    opacity: 1;
+  }
+  h5{
+    color: #ffffffc7;
+    font-size: 13px;
+    margin-inline-start: 20px;
+    font-weight: 100;
+  }
+  h2{
+    font-size: 20px;
+    text-align: center;
+    margin-inline-start: -30px;
+}
+.ios h2{
+    font-size: 16px;
+    text-align: center;
+    margin-inline-start: 0px;
+    margin-top: 25%;
+}
+  

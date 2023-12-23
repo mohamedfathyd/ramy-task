@@ -1,0 +1,162 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+@import "../src/theme/theme.scss";
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "Bahij";
+  src: url(./assets/fonts/Bahij_TheSansArabic-Bold.ttf);
+}
+
+html {
+  font-family: "Bahij";
+}
+ion-icon,
+label {
+  color: #000;
+  font-family: "Bahij";
+}
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  font-family: "Bahij";
+}
+.content-style {
+  font-family: Tajawal !important;
+}
+.general-button {
+  font-family: Tajawal !important;
+  font-size: 15px;
+  border: 1px solid;
+  color: white;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color: $green-button;
+  height: 50px;
+  font-weight: bold;
+}
+.general-button-white {
+  font-family: Tajawal !important;
+  font-size: 15px;
+  border: 1px solid;
+  color: $green-button;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color:white;
+  height: 50px;
+  font-weight: bold;
+}
+.general-button-transparent {
+  font-family: Tajawal !important;
+  font-size: 15px;
+  border: 1px solid;
+  color: white;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid white;
+  background-color:transparent;
+  height: 50px;
+  font-weight: bold;
+}
+.general-button-back {
+  font-family: Tajawal !important;
+  font-size: 15px;
+  border: 1px solid;
+  color: $green-button;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid $green-button;
+  background-color: white;
+  height: 50px;
+  font-weight: bold;
+}
+.black-button {
+  font-family: Tajawal !important;
+  font-size: 15px;
+  border: 1px solid;
+  color: white;
+  width: 85%;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color: black;
+  height: 50px;
+  font-weight: bold;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.side_menu_modal {
+  background: rgba(0, 0, 0, 0.5) !important;
+  padding-inline-end: 20% !important;
+  --border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  .modal-wrapper {
+    border-radius: 12px !important;
+    display: contents !important;
+  }
+}
+.input-style {
+  background-color: $input-background;
+  border: 1px solid $input-background;
+  border-radius: 12px;
+  margin: 8px 24px;
+  text-align: start;
+  color: $blue_title;
+  height: 50px;
+  .ios ion-input {
+    margin-top: -5px;
+  }
+  ion-input {
+    margin-top: -5px;
+  }
+}
+
+.swipe_account {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 5px;
+  --swiper-pagination-bullet-border-radius: 8px;
+}
+.select-label-placement-start .select-wrapper{
+  display: block !important;
+  font-size: 20px;
+  margin-inline-start: 20px;
+}
+.select-wrapper {
+  display: block !important;
+  font-size: 20px;
+  margin-inline-start: 20px;
+}

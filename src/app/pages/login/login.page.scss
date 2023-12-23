@@ -1,0 +1,81 @@
+@import "../../../theme/theme.scss";
+
+.content-style {
+    --background: #f9fbfc !important;
+}
+
+.login-body {
+    font-family: Tajawal;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    background-color: login-background-color();
+}
+.content {
+    margin: auto;
+    text-align: center;
+    margin: 32px;
+}
+.password_style {
+    -webkit-text-security: disc;
+}
+.password_style_view {
+    -webkit-text-security: null;
+}
+.start {
+    margin: auto;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+.dots {
+    border-bottom: 1px dotted black;
+}
+h3 {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: -12px;
+}
+.logo2 {
+    width: 30px;
+}
+label {
+    text-align: end;
+    margin: 5px 24px;
+    font-size: 12px;
+    color: #aa1d20;
+    display: block;
+    text-decoration: underline;
+}
+.logo {
+    width: 82px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+ion-icon {
+    color: #8ebea7;
+    width: 26px;
+    margin: 9px;
+    height: 26px;
+}
+h4 {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    span {
+        font-size: 14px;
+    }
+}
+.visitor {
+    width: 80%;
+    border: 1px solid #007844;
+    border-radius: 12px;
+    font: normal normal bold 16px/22px Bahij;
+    letter-spacing: -0.34px;
+    color: #007844;
+    opacity: 1;
+    margin: 57px auto;
+    padding: 14px;
+}

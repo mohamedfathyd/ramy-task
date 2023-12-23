@@ -1,0 +1,65 @@
+<ion-content class="ion-no-padding content-style">
+
+  <ion-row style="margin: 30px 10px;">
+    <ion-col class="about" size="11">
+      {{language.login.newRegister}}
+    </ion-col>
+    <ion-col (click)="login()" size="1">
+      <ion-icon class="back-icon" name="arrow-forward-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <div class="content">
+    <ion-row class="input-style" style="margin-top: 10%;">
+      <ion-col size="12">
+        <ion-input [(ngModel)]="name" placeholder="{{language.login.name}}">
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="input-style" style="margin-top: 7%;">
+      <ion-col size="12">
+        <ion-input type="text" inputmode="numeric" onkeypress=" 
+        if(!(event.charCode>=47 && event.charCode < 58))return false;" [(ngModel)]="phone"
+          placeholder="{{language.login.phone}}">
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="input-style" style="margin-top: 7%;">
+      <ion-col size="10">
+        <ion-input [(ngModel)]="password" type="text" class="password_style" [ngClass]="{'password_style_view':viewPassbool==true,
+         'password_style':viewPassbool==false }" placeholder="{{language.login.password}}">
+        </ion-input>
+      </ion-col>
+      <ion-col *ngIf="viewPassbool" (click)="viewPass(false)" size="2"><ion-icon class="icon-view"
+          name="eye-outline"></ion-icon> </ion-col>
+      <ion-col *ngIf="!viewPassbool" (click)="viewPass(true)" size="2"><ion-icon class="icon-view"
+          name="eye-off-outline"></ion-icon> </ion-col>
+    </ion-row>
+    <div class="start">
+      <ion-button (click)="register()" type="submit" fill="clear" class="general-button">
+        <strong>{{language.login.createNow}}</strong>
+      </ion-button>
+    </div>
+    <ion-row style="margin: 0px 24px;">
+      <ion-col size="4.5" class="dots"></ion-col>
+      <ion-col size="3">
+        <h3>{{language.login.orFrom}}</h3>
+      </ion-col>
+      <ion-col size="4.5" class="dots"></ion-col>
+    </ion-row>
+    <div class="start">
+      <img src="../../../assets/images/Group 704.png">
+    </div>
+    <div style="margin-top: -20px;" class="start">
+      <ion-button (click)="register()" type="submit" fill="clear" class="black-button">
+        <img width="110px" src="../../../assets/images/twitter.png">
+      </ion-button>
+    </div>
+    <h4>
+      {{language.login.haveAccount}}<span style="color: #AA1D20;font-weight: bolder;"
+        (click)="login()">{{language.login.loginNow}}</span>
+    </h4>
+    <h4 class="visitor">
+      {{language.login.visitor}}
+    </h4>
+  </div>
+</ion-content>
